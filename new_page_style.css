@@ -1,0 +1,288 @@
+body{
+    font-family:'Amaranth', sans-serif;
+    background: whitesmoke;
+}
+.contenedor_header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+}
+.carousel-inner{
+    height: 100%;
+}
+.nav_secundario{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: black;
+    width: 100%;
+    height: 40%;
+}
+.hiper2{
+    height: 1.5em;
+    margin-right:0.7em ;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: whitesmoke;
+    font-weight: 600;
+
+}
+.nav_principal{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background: #7216af;*/
+    /*background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);*/
+    background: #fff;
+}
+#contenedor_hipers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 70%;
+}
+.hiper{
+    border-radius: 10px;
+    color:black;
+    height: 100%;
+    padding-top: 0.7em;
+    font-size: 1.1em;
+}
+#hiper_afiliacion{
+    height: 2em;
+    background:#7216af ;
+    color:#fff;
+    padding: 0.3em;
+    font-size: 0.9em;
+    text-decoration: none;
+    border-radius: 7px;
+}
+#conteiner_icon{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    justify-content: space-around;
+}
+.icono{
+    font-size: 1.9em;
+    cursor: pointer;
+}
+.icono2{
+    display: none;
+    font-size: 1.9em;
+    cursor: pointer;
+}
+.conteiner_logo{
+    display: flex;
+    height: 100%;
+    width: 17%;
+}
+#logo{
+    height: 100%;
+    width: 100%;
+    min-width:150px;
+    padding: 0.3em;
+}
+.informacion{
+    margin-top: 0.7em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; 
+    height: 55vh;
+}
+.asesoria{
+    height: 100%;
+    width: 49%;
+    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.404) 0%, rgba(249, 213, 35, 0.404) 100%),url("../fotos/nutricion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.virtual{
+    height: 100%;
+    width: 49%;
+    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.404) 0%, rgba(249, 213, 35, 0.404) 100%),url("../fotos/virtual.jpg");
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+.subtitulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size: 1.2em;
+    height: 100%;
+}
+.contenedor_boton{
+    color:black;
+    width:40%;
+    height:14%;
+    text-align: center;
+}
+.botones{
+    font-size: 1.3em;
+    background: transparent;
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.buscador{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+}
+.texto{
+    width: 94%; 
+    border: 2px solid #7216af ;
+    border-radius: 5px;
+
+}
+.boton{
+    width: calc(100% - 94%);
+    background: #AF7AC5  ;
+    border-radius: 5px ;
+    border: 2px solid #7216af  ;
+    
+}
+/*
+540px Dispositivos pequeños: celulares etc. 
+
+720px Dispositivos medianos: tablets, algunos pc.
+
+960px Dispositivos largos: pc de escritorio.
+
+1140px Dispositivos extra largos: televisores y algunos pc
+*/
+
+@media screen and (max-width: 540px ){
+#contenedor_hipers{
+    display: none;
+}
+.conteiner_logo{
+    width: 45%;
+}
+#conteiner_icon{
+    display: flex;
+    width: 25%;
+    align-items:center;
+    justify-content:flex-start;
+}
+.icono{
+    margin-left: 0.6em;
+    font-size: 1.5em;
+}
+.quit{
+    display: none;
+}
+.icono2{
+    display: block;
+    font-size: 1.9em;
+    cursor: pointer;
+}
+.informacion{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+}
+.asesoria{
+    width: 100%;
+    height: 49%;
+}
+.virtual{
+    width: 100%;
+    height: 49%;
+}
+.contenedor_boton{
+    width: 60%;
+}
+.titulo_info{
+    font-size: 1em;
+}
+.subtitulo_info{
+    font-size: 1.5em;
+}
+.buscador{
+    height: 6vh;
+}
+.texto{
+    width:70% ;
+    font-size: 0.9em;
+}
+.boton{
+    width: 30%;
+    font-size: 0.9em;
+}
+}
+@media screen and (max-width:720px){
+#contenedor_hipers{
+    display: none;
+}
+.conteiner_logo{
+    width: 35%;
+}
+.nav_principal{
+    width: 100%;
+}
+.nav_secundario{
+    width: 100%;
+}
+#conteiner_icon{
+    display: flex;
+    width: 25%;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.icono{
+    font-size: 1.5em;
+}
+.icono2{
+    display: none;
+    font-size: 1.9em;
+    cursor: pointer;
+}
+.informacion{
+    display: flex;
+    flex-basis: 100vw;
+    height: 80vh; 
+    flex-direction: column;
+    overflow: hidden;
+}
+.asesoria{ 
+    width: 100%;
+    height:49%;
+}
+.virtual{
+    width: 100%;
+    height: 49%;
+}
+.contenedor_boton{
+    width: 50%;
+}
+.titulo_info{
+    font-size: 1.2em;
+}
+.subtitulo_info{
+    font-size: .9em;
+}
+.buscador{
+    height: 6vh;
+}
+.texto{
+    width:70%;
+    font-size: 0.9em;
+}
+.boton{
+    width: 30%;
+    font-size: 0.9em;
+}
+}
