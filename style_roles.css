@@ -40,7 +40,7 @@ body{
     padding: 0.2em 0.2em;
     border-radius: 15px;
     color: black;
-    background: #3498DB;
+    background: #5DADE2;
 }
 .contenedor_boton{
     display: flex;
@@ -59,8 +59,111 @@ body{
     border-radius: 5px;
     outline: none;
 }
-.slider{
+:root{
+    --colorletras:black
+}
+.icon_slider{
     color: black;
     padding: 0 0.4em;
     font-size: 1.4em;
+}
+.contenedor_info{
+    height: calc(100vh - 7.5vh);
+    display: flex;
+}
+.slider_options{
+    width: 20%;
+    background:#154360;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.datos_user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 24%;
+}
+#picture{
+    height: 70%;
+    width: 35%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:url("fotos/usuario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#name{
+    border:2px solid #AF7AC5 ;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--colorletras);
+    height: 20%;
+    width: 50%;
+}
+.options{
+    height:55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#consulta{
+    font-size: 1.3em;
+    color: var(--colorletras);
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    padding: 0.4em 0;
+    height: 15%;
+    width: 70%;
+}
+#progreso{
+    font-size: 1.3em;
+    color: var(--colorletras);
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    padding: 0.4em 0;
+    height: 15%;
+    width: 70%;
+}
+#actualizar_data{
+    font-size: 1.3em;
+    color: var(--colorletras);
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    padding: 0.4em 0;
+    height: 15%;
+    width: 70%;
+}
+#suspend_acount{
+    font-size: 1.3em;
+    color: var(--colorletras);
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    padding: 0.4em 0;
+    height: 15%;
+    width: 70%;
+}
+#delete_acount{
+    font-size: 1.3em;
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    color: var(--colorletras);
+    padding: 0.4em 0;
+    height: 15%;
+    width: 70%;
+}
+.tablero{
+    width: 80%;
+    background:#ECF0F1 ;
 }
