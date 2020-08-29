@@ -74,8 +74,7 @@ body{
 }
 .icono2{
     display: none;
-    font-size: 1.9em;
-    cursor: pointer;
+    color:white;
 }
 .conteiner_logo{
     display: flex;
@@ -246,7 +245,7 @@ body{
     font-size: 1.5em;
 }
 .icono2{
-    display: none;
+    display: block;
     font-size: 1.9em;
     cursor: pointer;
 }
