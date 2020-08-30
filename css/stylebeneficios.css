@@ -1,0 +1,91 @@
+body{ 
+    background-color: white;
+    margin:0;
+}
+
+
+h2{margin:15px 0;
+    font: bold 150% sans-serif;
+    padding-bottom:10px;
+    width:450px;
+    color:#000000;
+    border-bottom:3px solid #5a0b79}
+
+    h1{margin:30px 0;
+        font: bold 450% sans-serif;
+        padding-bottom:10px;
+        width:450px;
+        color:#000000;
+        border-bottom:3px solid #5a0b79}
+
+
+p{margin:15px 0;
+    position: relative;
+    font: 150% sans-serif;
+    width:450px;
+    text-align: justify;
+    color:#000000; }
+
+    li{margin:15px 0;
+        position: relative;
+        font: 150% sans-serif;
+        width:450px;
+        text-align: left;
+        color:#000000; }
+        
+
+.Nosotros {
+    position: relative;
+    float: left;
+    top: 50px;
+    left: 120px; 
+ }
+
+ .Porque {
+    position: relative;
+    float: right;
+    top: 50px;
+    right: 120px;
+ }
+
+ .Beneficios {
+    position: relative;
+    float: left;
+    top: 65px;
+    left: 120px; 
+ }
+
+
+ .Planes {
+    position: relative;
+    float: right;
+    top: 65px;
+    right: 120px;
+ }
+
+
+
+
+ button{float:left;
+   position: relative;
+    left: 50px;
+    padding:13px 70px;
+    font-family:'Montserrat',sans-serif;
+    font-size: 20px;
+    border:3px solid #000000;
+    background:0;
+    color:#ffffff;
+    background-color: #5a0b79;
+    cursor:pointer;
+    margin:30px 20px;
+    transition:all .3s}
+button:hover{background:#000000;color:#fff}
+
+
+ 
+
+
+
+
+
+  
