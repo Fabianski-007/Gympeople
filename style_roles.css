@@ -20,11 +20,12 @@ body{
     justify-content: flex-start;
     align-items: center;
     width: calc(100% - 77%);
-    background: #5DADE2;
+    background: #F39C12;
 }
 #sectionTwoNav{
     display: flex;
-    background: #154360;
+    background: black;
+    /*background: #154360;*/
     justify-content: space-between;
     width: 77%;
 }
@@ -40,7 +41,7 @@ body{
     padding: 0.2em 0.2em;
     border-radius: 15px;
     color: black;
-    background: #5DADE2;
+    background: #F39C12;
 }
 .contenedor_boton{
     display: flex;
@@ -53,7 +54,7 @@ body{
 #log_out{
     width: 90%;
     height: 80%;
-    background: #1ABC9C;
+    background: #F39C12;
     font-size: 1.1em;
     border:none;
     border-radius: 5px;
@@ -73,7 +74,7 @@ body{
 }
 .slider_options{
     width: 20%;
-    background:#154360;
+    background:#F4D03F;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -118,6 +119,7 @@ body{
     color: var(--colorletras);
     text-align: center;
     border:2px solid white;
+    background:#F4D03F;
     border-radius: 10px;
     padding: 0.4em 0;
     height: 15%;
@@ -128,6 +130,7 @@ body{
     color: var(--colorletras);
     text-align: center;
     border:2px solid white;
+    background:#F4D03F;
     border-radius: 10px;
     padding: 0.4em 0;
     height: 15%;
@@ -138,6 +141,7 @@ body{
     color: var(--colorletras);
     text-align: center;
     border:2px solid white;
+    background:#F4D03F;
     border-radius: 10px;
     padding: 0.4em 0;
     height: 15%;
@@ -148,6 +152,7 @@ body{
     color: var(--colorletras);
     text-align: center;
     border:2px solid white;
+    background:#F4D03F;
     border-radius: 10px;
     padding: 0.4em 0;
     height: 15%;
@@ -157,6 +162,7 @@ body{
     font-size: 1.3em;
     text-align: center;
     border:2px solid white;
+    background:#F4D03F;
     border-radius: 10px;
     color: var(--colorletras);
     padding: 0.4em 0;
