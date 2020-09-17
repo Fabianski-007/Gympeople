@@ -88,11 +88,11 @@ body{
 }
 #picture{
     height: 70%;
-    width: 35%;
+    width: 45%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background:url("fotos/usuario.jpg");
+    background:url("../fotos/usuario.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
