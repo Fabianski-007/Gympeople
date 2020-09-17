@@ -9,6 +9,8 @@
  sliderOptions.click(function(){
     options.slideToggle("fast"),
     tablero.css("width","100%");
+    gg
+    gg
  })
 
 })
