@@ -97,7 +97,7 @@ body{
 .asesoria{
     height: 100%;
     width: 49%;
-    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.404) 0%, rgba(249, 213, 35, 0.404) 100%),url("../fotos/nutricion.jpg");
+    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.404) 0%, rgba(249, 213, 35, 0.404) 100%),url("fotos/nutricion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,7 +105,7 @@ body{
 .virtual{
     height: 100%;
     width: 49%;
-    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.404) 0%, rgba(249, 213, 35, 0.404) 100%),url("../fotos/virtual.jpg");
+    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.404) 0%, rgba(249, 213, 35, 0.404) 100%),url("fotos/virtual.jpg");
     background-size: cover;
     background-position:center ;
     background-repeat: no-repeat;
