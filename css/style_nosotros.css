@@ -92,7 +92,7 @@ body{
 .contenedor_titulo{
     width: 100%;
     height: calc(100vh - 9vh);
-    background-image: linear-gradient(to bottom, #32323285 0%, #3f3f3f83 40%, #1c1c1c86 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%),url("fotos/nosotros2.jpg");
+    background-image: linear-gradient(to bottom, #32323285 0%, #3f3f3f83 40%, #1c1c1c86 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%),url("../fotos/nosotros2.jpg");
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
