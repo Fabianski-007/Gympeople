@@ -4,8 +4,6 @@
  var options = $(".slider_options");
  var tablero = $(".tablero");
 
- options.hide();
-
  sliderOptions.click(function(){
     options.slideToggle("fast"),
     tablero.css("width","100%");

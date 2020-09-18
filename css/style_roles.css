@@ -59,6 +59,7 @@ body{
     border:none;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
 }
 :root{
     --colorletras:black
@@ -96,6 +97,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 3px solid #fff;
+}
+#titulo_name{
+    padding: .2em;
 }
 #name{
     border:2px solid #AF7AC5 ;

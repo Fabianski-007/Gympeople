@@ -1,18 +1,19 @@
 window.addEventListener("load",function(){
 
-    var hover_nav_principal = $(".hiper");
-    hover_nav_principal.hover(cambiacolors,cambiacolores);
+    var hover_nav_principal = $(".contenedor_hipers");
+    hover_nav_principal.hover(realizarcambio,devolvercambio);
 
-    function cambiacolors(){
+    function realizarcambio(){
         $(this).css("background","#FF5733")
         .css("color","#fff")
-        .css("border-top","2px solid blue")
-        .css("text-decoration","none");
+        .css("border-top","4px solid #7216af")
+        $(".hiper").css("text-decoration","none");
     }
-    function cambiacolores(){
+    function devolvercambio(){
         $(this).css("background","#fff")
         .css("color","black")
-        .css("border-top","none");
+        .css("border-top","none"),
+        $(".hiper").css("color","black");
     }
 
     // Evento para hover de afiliacion
