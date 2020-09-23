@@ -5,15 +5,15 @@ window.addEventListener("load",function(){
 
     function realizarcambio(){
         $(this).css("background","#FF5733")
-        .css("color","#fff")
         .css("border-top","4px solid #7216af")
-        $(".hiper").css("text-decoration","none");
+        $(".hiper").css("text-decoration","none")
     }
     function devolvercambio(){
-        $(this).css("background","#fff")
+        $(this).css("background","rgba(255, 255, 255, 0.822)")
         .css("color","black")
         .css("border-top","none"),
-        $(".hiper").css("color","black");
+        $(".hiper").css("color","black")
+        .css("text-decoration","none");
     }
 
     /*  hover_nav_principal[0].addEventListener("mouseover",function(){
@@ -132,4 +132,12 @@ window.addEventListener("load",function(){
         busca.slideToggle("fast");
     })
 
+    $(".slider_pics").bxSlider({
+        mode:"fade",
+        captions:"false",
+        slideWidth:1300,
+        auto:true,
+        speed:4000,
+        pager:true
+    });
 })
