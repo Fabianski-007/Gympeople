@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="stylecotizaciones.css">
+    <link rel="icon" type="image/png" href="imagenes/Icono.png">
+    <title>FORMULARIO DE COTIZACIÓN</title>
+</head>
+  
+
+<body style="background-color: #0066ff;" >
+
+  <h1 style="color: #ffffff;margin-left: 20px;margin-top: 30px;"> COTIZA TU PLAN DE PRECIOS </h1>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+
+    <form class="needs-validation" novalidate="" style="
+     padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color:#7216af;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 52px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px"> 
+    
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01" style="color: #ffffff;">Nombres</label>
+            <input type="text" placeholder="Tus nombres" class="form-control" id="validationCustom01" value="" style="color: #000000; border: 2px solid rgb(0, 0, 0);"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02" style="color: #ffffff;">Apellidos</label>
+            <input type="text" placeholder="Tus apellidos" class="form-control" id="validationCustom02" value="" style="color: black; border: 2px solid rgb(0, 0, 0);" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02" style="color: #ffffff;">Correo</h5></label>
+            <input type="text" placeholder="Tu correo" class="form-control" id="validationCustom02" value="" style="color: black; border: 2px solid rgb(0, 0, 0);" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02" style="color: #ffffff;">Telefono</h5></label>
+            <input type="text" placeholder="Tu telefono" class="form-control" id="validationCustom02" value="" style="color: black; border: 2px solid rgb(0, 0, 0);" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom03" style="color: #ffffff;">Ciudad</h5></label>
+            <input type="text" placeholder="Tu ciudad" class="form-control" id="validationCustom03" style="color: black; border: 2px solid rgb(0, 0, 0);" required>
+            <div class="invalid-feedback" style="color: #ff4e4e;" >
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom04" style="color: #ffffff;">Escoge el plan de precios</h5></label>
+            <select class="custom-select" id="validationCustom04" style="color: black; border: 2px solid rgb(0, 0, 0);" required>
+              <option selected disabled value="">Choose...</option>
+            
+              <option>50.000</option>
+              <option>65.000</option>
+              <option>100.000</option>
+              <option>250.000</option>
+              
+            </select>
+            <div class="invalid-feedback" style="color: #ff4e4e;" >
+              
+              Please select a price plan.
+            </div>
+          </div>
+          
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck" style="color: #ffffff;" >
+              
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback" style="color: #ff4e4e;" >
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary"  type="submit" style="border: 2px solid rgb(0, 0, 0); background-color: rgb(0, 158, 0); ">Enviar Cotizacion</button>
+      </form>
+   
+      
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+</body>
+
+</html>
