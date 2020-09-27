@@ -20,12 +20,12 @@ body{
     justify-content: flex-start;
     align-items: center;
     width: calc(100% - 77%);
-    background: #F39C12;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     border-radius: 5px;
 }
 #sectionTwoNav{
     display: flex;
-    background:#7216af;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 5px;
     /*background: #154360;*/
     justify-content: space-between;
@@ -38,12 +38,12 @@ body{
     justify-content: space-evenly;
 }
 .icono{
-    border: 2px solid white;
     font-size: 1.4em;
     padding: 0.2em 0.2em;
     border-radius: 15px;
     color: black;
-    background: #F39C12;
+    border:2px solid rgba(184, 48, 184, 0.575);
+    background:#fff;
 }
 .contenedor_boton{
     display: flex;
@@ -56,9 +56,9 @@ body{
 #log_out{
     width: 90%;
     height: 80%;
-    background: #F39C12;
+    background: #fff;
     font-size: 1.1em;
-    border:none;
+    border:2px solid rgba(184, 48, 184, 0.575);
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -75,14 +75,30 @@ body{
     height: calc(100vh - 7.5vh);
     display: flex;
 }
-.slider_options{
-    width: 20%;
-    background:#7216af;
+#slider_options{
+    width: 25%;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     border-radius: 5px;
     flex-direction: column;
     justify-content:space-evenly;
+    transition: height 0.35s ease-in-out;
+    overflow: hidden;
 }
+#slider_options:not(.active) {
+    display: none;
+}
+/*
+Cuando utilizo la transition es el tiempo que durara en hacer dicho estado o movimiento
+overflow ocultara las partes que sobre salgan 
+#you{
+    transition: height 0.45s ease-in-out;
+    overflow: hidden;
+    border: 2px solid red;
+}
+#you:not(.active){
+    display: none;
+}*/
 .datos_user{
     display: flex;
     flex-direction: column;
@@ -100,22 +116,22 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 3px solid #fff;
+    border:2px solid rgba(16, 4, 129, 0.979);
 }
 #titulo_name{
     padding: .2em;
 }
 #name{
-    border:2px solid #fff ;
+    border:2px solid rgba(16, 4, 129, 0.979);
     border-radius: 10px;
-    background:#F4D03F;
+    background:#5cc2c5de;
     text-align: center;
     font-size: 1.2em;
     color: var(--colorletras);
     height: 20%;
     width: 50%;
 }
-.options{
+.conteiner_options{
     height:55%;
     display: flex;
     flex-direction: column;
@@ -127,14 +143,33 @@ body{
     font-size: 1.3em;
     color: var(--colorletras);
     text-align: center;
-    border:2px solid white;
-    background:#F4D03F;
+    border:2px solid rgba(184, 48, 184, 0.575);
+    background:#fff;
     border-radius: 10px;
     padding: 0.4em 0;
     height: 15%;
     width: 70%;
+    cursor: pointer;
 }
 .tablero{
-    width: 80%;
-    background:#ECF0F1 ;
+    width: 100%;
+    background:#85838488 ;
+}
+#anuncio{
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    border-radius: 20px;
+    top: 30%;
+    right: 38%;
+    height: 10vh;
+    width: 25vw;
+}
+.contenido{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-size: 1.3em;
+    width: 100%;
 }

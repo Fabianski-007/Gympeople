@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style_roles.css">
-    <link rel="stylesheet" href="JS/jqueryUi/jquery-ui.min.css">
-    <link rel="stylesheet" href="JS/jqueryUi/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="JS/jqueryUi/jquery-ui.theme.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0ed3d486e.js"></script>
     <script src="JS/roles.js"></script>
-    <script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="JS/jqueryUi/jquery-ui.min.js" ></script>
     <title>Dasboard</title>
 </head>
 <body>
@@ -37,7 +32,7 @@
         </nav>
     </header>
     <section class="contenedor_info">
-        <div class="slider_options">
+        <div id="slider_options">
             <div class="datos_user">
                 <div id="picture">
                     
@@ -46,7 +41,7 @@
                     <p id="titulo_name">SR MICHI</p>
                 </div>
             </div>
-            <div class="options">
+            <div class="conteiner_options">
                 <div class="consulta opciones">
                     Consultar Rutina
                 </div>
@@ -65,10 +60,12 @@
             </div>
         </div>
         <div class="tablero">
-
+        <div id="anuncio">
+            <div class="contenido">
+            <p> CERRANDO SESION <span id="countdowntimer"> 5 </span></p>
+            </div>
         </div>
 
-
-    </section>
+        </div>
 </body>
 </html>
