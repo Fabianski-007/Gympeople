@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/style_roles.css">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0ed3d486e.js"></script>
+    <!--MorrisJS-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <!--Fichero-->
     <script src="JS/roles.js"></script>
     <title>Dasboard</title>
 </head>
@@ -60,12 +67,24 @@
             </div>
         </div>
         <div class="tablero">
-        <div id="anuncio">
-            <div class="contenido">
-            <p> CERRANDO SESION <span id="countdowntimer"> 5 </span></p>
+            <div id="anuncio">
+                <div class="contenido">
+                    <p> CERRANDO SESION <span id="countdowntimer"> 5 </span></p>
+                </div>
             </div>
-        </div>
+            <div id="contenedor_tabla" class="graficas">
+                <p>Ingreso de clientes</p>
+                <div id="myfirstchart">
 
+                </div>
+            </div>
+
+            <div id="contenedor_dona" class="graficas">
+                <p>Estado Maquinas</p>
+                <div id="donut-example">
+                    
+                </div>
+            </div>
         </div>
 </body>
 </html>
