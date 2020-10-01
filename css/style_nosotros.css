@@ -1,163 +1,488 @@
 body{
-    font-family:'Amaranth', sans-serif;
-    background: whitesmoke;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
-.contenedor_header{
+.logo{
+    width: 190px;
+    height: 95%;
+}
+.contenedor_navs{
     display: flex;
     flex-direction: column;
+    height: 12vh;
     width: 100%;
-    height: 8vh;
+    position: fixed;
+    z-index: 200;
 }
-.nav_principal{
-    width: 100%;
-    height: 100%;
+#contenedor_sub{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*background: #7216af;*/
-    /*background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);*/
-    background: #fff;
+    justify-content: flex-end;
+    height: 40%;
+    background: rgba(136, 48, 207, 0.384);
 }
-#contenedor_hipers{
+#contenedor_link_sub{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 70%;
-}
-.hiper{
-    border-radius: 10px;
-    color:black;
-    height: 100%;
-    text-decoration: none;
-    padding-top: 0.7em;
-    font-size: 1.1em;
-}
-#hiper_afiliacion{
-    height: 2em;
-    background:#7216af ;
-    color:#fff;
-    padding: 0.3em;
-    font-size: 0.9em;
-    text-decoration: none;
-    border-radius: 7px;
-}
-#conteiner_icon{
-    display: flex;
-    align-items: center;
-    width: 10%;
+    width: 15%;
     justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
-.icono{
-    font-size: 1.9em;
-    cursor: pointer;
-}
-.icono2{
-    font-size: 1.9em;
-    cursor: pointer;
-}
-.conteiner_logo{
+#contenedor_principal{
     display: flex;
-    height: 100%;
-    width: 17%;
+    justify-content: space-evenly;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.719);
 }
-#logo{
-    height: 100%;
-    width: 100%;
-    min-width:150px;
-    padding: 0.3em;
-}
-
-.buscador{
+#contenedor_link_princi{
     display: flex;
-    width: 100%;
-    height: 8vh;
-
-}
-.texto{
-    width: 92%; 
-    height: 100%;
-    border: 2px solid #7216af ;
-    border-radius: 5px;
-
-}
-.boton{
-    width:6.8%;
-    height: 100%;
-    background: #AF7AC5  ;
-    border-radius: 5px ;
-    border: 2px solid #7216af  ;
-    
-}
-.contenedor_titulo{
-    width: 100%;
-    height: calc(100vh - 9vh);
-    background-image: linear-gradient(to bottom, #32323285 0%, #3f3f3f83 40%, #1c1c1c86 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%),url("../fotos/nosotros2.jpg");
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
+    width: 50%;
     justify-content: space-evenly;
     align-items: center;
+    list-style: none;
 }
-.titulo{
-    color: #fff;
-    font-size: 5em;
-    font-weight: 600;
-    height: 30%;
-    width: 39%;
-    text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+#afiliacion{
+    display: flex;
+    width:25%;
+    border-radius: 13px;
+    background: #7216afcc;
 }
-.conteiner_boton{
-    width:20vw;
-    height: 5.5vh;
-}
-#more_info{
+#contenedor_afiliar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     width: 100%;
-    height: 100%;
-    color: #fff;
-    background:#7216af ;
-    font-size: 1em;
-    cursor: pointer;
-    outline: none;
-    border: 2px dashed #FDFEFE;
-    border-radius: 5px;
 }
+.items>a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+.sign-in{
+    margin:3px;
+}
+/*NAV*/
+/*NAV-RESPONSIVE*/
+.hamburguesa{
+    display: none;
+}
+#contenedor_principal_responsive{
+    display: none;
+}
+/*NAV-RESPONSIVE*/
+/*Imagen central*/
+#header{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+.img_header{
+    background: url(../fotos/nosotros2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#titulo{
+    color: #FF5733;
+    font-size: 3.5em;
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    z-index: 1;
+}
+/*INFORMACION*/
 .conteiner_info{
     display: flex;
-    height:50vh;
+    background: url(../fotos/img5.jpg);
+    background-position: center;
+    background-size: cover;
+    height:60vh;
     width: 100%;
     justify-content: space-around;
-    align-content: center;
-    padding: 0.5em 0;
+    align-items: center;
+    margin-top: 10px;
 }
-#mision{
-    width: 49%;
+.cajitas_info{
+    border-radius: 5px;
+    width: 48%;
+    height: 40%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e4b8f5 100%);
-}
-#vision{
-    width: 49%;
-    font-size: 1.5em;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e4b8f5 100%);
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 .titulos_info{
     width: 15%;
+    font-size: 1.3em;
+}
+#titulo{
+    position: absolute;
+    font-size:3em;
+    top: 75%;
+    left: 33%;
+}
+/*INFORMACION*/
+/*FOOTER*/
+.contenedor_footer{
+    margin-top:10px ;
+    text-align: center;
+    height: 40vh;
+    background: #000000;
+}
+#RedeSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.contenedor_links_redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 60%;
+    list-style: none;
+}
+.texto_redes{
     font-size: 1.6em;
+    padding: 15px;
+    color: #fff;
+}
+.items_redes>a,.items_redes>a>span{
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 5px;
+}
+/*FOOTER*/
+@media screen and (max-width: 540px ){
+#contenedor_link_princi{
+    display: none;
+}
+#afiliacion{
+    display: none;
+}
+.items{
+    list-style: none;
+}
+#contenedor_sub{
+    display: none;
+}
+.hamburguesa{
+    display: flex;
+    align-self: center;
+    height: 70%;
+}
+.hamburguesa>i{
+    height: 100%;
+    font-size: 1em;
+    cursor: pointer;
+}
+#contenedor_principal{
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+}
+#contenedor_principal_responsive{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+    width: 100%;
+}
+#contenedor_link_responsive{
+    display: flex;
+    background: rgba(255, 255, 255, 0.719);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:30vh;
+    width: 100%;
+}
+#afiliacion_responsive{
+    display: flex;
+    justify-content: center;
+    background:#7216afcc;
+    border-radius: 13px;
+    width: 100%;
+    height: 15%;
+}
+.bt-ingresar>a{
+    color: black;
+}
+.conteiner_info{
+    display: flex;
+    background: url(../fotos/img5.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    height:60vh;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+.cajitas_info{
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.vision{
+    height: 35%;
+}
+.titulos_info{
+    width: 15%;
+    font-size: 1.3em;
+}
+#titulo{
+    position: absolute;
+    font-size: 1.6em;
+}
+.contenedor_footer{
+    margin-top:10px ;
+    text-align: center;
+    height: 40vh;
+    background: #000000;
+}
+#RedeSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+.contenedor_links_redes{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 60%;
+    list-style: none;
+}
+.texto_redes{
+    font-size: 1em;
+    padding: 15px;
+    color: #fff;
+}
+.items_redes>a,.items_redes>a>span{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 5px;
+}
+}
+@media screen and (max-width:720px){
+#contenedor_link_princi{
+    display: none;
+}
+#afiliacion{
+    display: none;
+}
+.items{
+    list-style: none;
+}
+#contenedor_sub{
+    display: none;
+}
+.hamburguesa{
+    display: flex;
+    align-self: center;
+    height: 70%;
+    cursor: pointer;
+}
+.hamburguesa>i{
+    height: 100%;
+    font-size: 1em;
+    cursor: pointer;
+}
+#contenedor_principal{
+    display: flex;
+    justify-content: space-between;
+}
+#contenedor_principal_responsive{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+    width: 100%;
+}
+#contenedor_link_responsive{
+    display: flex;
+    background: rgba(255, 255, 255, 0.719);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:30vh;
+    width: 100%;
+}
+#afiliacion_responsive{
+    display: flex;
+    justify-content: center;
+    background:#7216afcc;
+    border-radius: 13px;
+    width: 100%;
+    height: 15%;
+}
+.bt-ingresar>a{
+    color: black;
+}
+.conteiner_info{
+    display: flex;
+    background: url(../fotos/img5.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    height:60vh;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 10px;
+}
+.cajitas_info{
+    border-radius: 5px;
+    width: 100%;
+    height: 40%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.titulos_info{
+    width: 15%;
+    font-size: 1.3em;
+}
+#titulo{
+    position: absolute;
+    font-size: 1.6em;
+    top: 75%;
+    left: 30%;
+}
+.texto_redes{
+    font-size: .99em;
+    padding: 15px;
+    color: #fff;
+}
+.items_redes>a,.items_redes>a>span{
+    color: #fff;
+    font-size: 1.1em;
+    margin: 5px;
+}
+}
 
+@media screen and (max-width:1034px){    
+#contenedor_link_princi{
+    display: none;
+}
+#afiliacion{
+    display: none;
+}
+.items{
+    list-style: none;
+}
+#contenedor_sub{
+    display: none;
+}
+.hamburguesa{
+    display: block;
+    font-size: 1.7em;
+    margin: 15px;
+    cursor: pointer;
+}
+#contenedor_principal{
+    display: flex;
+    justify-content: space-between;
+}
+#contenedor_principal_responsive{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+    width: 100%;
+}
+#contenedor_link_responsive{
+    display: flex;
+    background: rgba(255, 255, 255, 0.719);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:30vh;
+    width: 100%;
+}
+#afiliacion_responsive{
+    display: flex;
+    justify-content: center;
+    background:#7216afcc;
+    border-radius: 13px;
+    width: 100%;
+        height: 15%;
+}
+.bt-ingresar>a{
+    color: black;
+}  
+.conteiner_info{
+    display: flex;
+    background: url(../fotos/img5.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    height:60vh;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 10px;
+}
+.cajitas_info{
+    border-radius: 5px;
+    width: 100%;
+    height: 40%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.titulos_info{
+    width: 15%;
+    font-size: 1.3em;
+}
+#titulo{
+    position: absolute;
+    font-size: 1.6em;
+    top: 75%;
+    left: 30%;
+}
+.texto_redes{
+    font-size: 1.1em;
+    padding: 15px;
+    color: #fff;
+}
+.items_redes>a,.items_redes>a>span{
+    color: #fff;
+    font-size: 1.3em;
+    margin: 5px;
+}
 }

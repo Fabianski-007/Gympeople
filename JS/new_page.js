@@ -1,113 +1,57 @@
 window.addEventListener("load",function(){
     // Evento para utilizar el hover en el nav principal
-    var hover_nav_principal = $(".hiper");
-    hover_nav_principal.hover(cambiacolors,cambiacolores);
+    var hover_nav_principal = $(".items");
+    var letras = $(".items>a");
+    var redes  = $(".items_redes>a");
+    hover_nav_principal.hover(realizarcambio,devolvercambio);
+    letras.hover(realizarcambioletras,devolvercambioletras);
+    redes.hover(cambiocolorredes,devolvercolorredes);
 
-    function cambiacolors(){
-        $(this).css("background","#FF5733")
-        .css("color","#fff")
-        .css("border-top","2px solid blue")
-        .css("text-decoration","none");
+    function realizarcambioletras(){
+        $(this).css("color","#FF5733")
     }
-    function cambiacolores(){
-        $(this).css("background","#fff")
-        .css("color","black")
-        .css("border-top","none");
+    function devolvercambioletras(){
+        $(this).css("color","black")
+    }
+    function cambiocolorredes(){
+        $(this).css("color","#FF5733")
+    }
+    function devolvercolorredes(){
+        $(this).css("color","#fff");
     }
 
-    /*  hover_nav_principal[0].addEventListener("mouseover",function(){
-        hover_nav_principal[0].style.color = "#eb6806";  
+
+    function realizarcambio(){
+        $(this).css("color","#FF5733")
+        .css("border-bottom","2px solid #7216af")
+    }
+    function devolvercambio(){
+        $(this).css("color","black")
+        .css("border-bottom","none")
+    }
+    // Nav Responsive
+    var sliderResponsive = $(".hamburguesa");
+    var contenedor_responsive =$("#contenedor_principal_responsive");
+
+    contenedor_responsive.hide();
+    sliderResponsive.click(function(){
+        contenedor_responsive.slideToggle("fast")
     })
-        hover_nav_principal[1].addEventListener("mouseover",function(){
-        hover_nav_principal[1].style.color = "#eb6806";  
-    })
-        hover_nav_principal[2].addEventListener("mouseover",function(){
-        hover_nav_principal[2].style.color = "#eb6806";  
-    })
-        hover_nav_principal[3].addEventListener("mouseover",function(){
-        hover_nav_principal[3].style.color = "#eb6806";  
-    })
-        hover_nav_principal[4].addEventListener("mouseover",function(){
-        hover_nav_principal[4].style.color = "#eb680";  
-    })
-    //Evento quitar del hover de  el nav principal 
-        hover_nav_principal[0].addEventListener("mouseout",function(){
-        hover_nav_principal[0].style.color = "black";
-    })
-        hover_nav_principal[1].addEventListener("mouseout",function(){
-        hover_nav_principal[1].style.color = "black";
-    })
-        hover_nav_principal[2].addEventListener("mouseout",function(){
-        hover_nav_principal[2].style.color = "black";
-    })
-        hover_nav_principal[3].addEventListener("mouseout",function(){
-        hover_nav_principal[3].style.color = "black";
-    })
-        hover_nav_principal[4].addEventListener("mouseout",function(){
-        hover_nav_principal[4].style.color = "black";
-    })*/
-    // Evento para utilizar el hover en el nav secundario
-    var hover_nav_secundario = $(".hiper2")
+
+
+
+
+    /*var hover_nav_secundario = $(".hiper2")
     hover_nav_secundario.hover(cambiacolors2,cambiacolores2);
 
     function cambiacolors2(){
         $(this).css("color","#FF5733")
+        .css("text-decoration","none");
     }
     function cambiacolores2(){
         $(this).css("color","#fff")
-    }
+    }*/
 
-    /* hover_nav_secundario[0].addEventListener("mouseover",function(){
-     hover_nav_secundario[0].style.color = "#eb6806"    
-     })
-     hover_nav_secundario[1].addEventListener("mouseover",function(){
-     hover_nav_secundario[1].style.color = "#eb6806"    
-     })
-     hover_nav_secundario[2].addEventListener("mouseover",function(){
-     hover_nav_secundario[2].style.color = "#eb6806"    
-     })
-     hover_nav_secundario[3].addEventListener("mouseover",function(){
-     hover_nav_secundario[3].style.color = "#eb6806"    
-     })
-     //Evento para quitar el hover de el nav secundario
-     hover_nav_secundario[0].addEventListener("mouseout",function(){
-     hover_nav_secundario[0].style.color = "whitesmoke";    
-     })
-     hover_nav_secundario[1].addEventListener("mouseout",function(){
-     hover_nav_secundario[1].style.color = "whitesmoke";    
-     })
-     hover_nav_secundario[2].addEventListener("mouseout",function(){
-     hover_nav_secundario[2].style.color = "whitesmoke";    
-     })
-     hover_nav_secundario[3].addEventListener("mouseout",function(){
-     hover_nav_secundario[3].style.color = "whitesmoke";    
-     })*/
-
-    var afiliacion = $("#hiper_afiliacion");
-     // Evento para hover de afiliacion
-
-    afiliacion.hover(colorafiliacion,coloresafilicion);
-
-    function colorafiliacion(){
-        var short_this = $(this);
-        short_this.css("background","black");
-    }
-    function coloresafilicion(){
-        var short_this = $(this);
-        short_this.css("background","#7216af");
-    }
-
-    //Evento para hacer el hover a la afiliciacion 
-    /*afiliacion.addEventListener("mouseover",function(){
-    this.style.background = "black";
-    this.style.color = "#fff";
-    }) 
-    //Evento para quitar el hover de la afiliacion 
-    afiliacion.addEventListener("mouseout",function(){
-    this.style.background = "#7216af";
-    this.style.color = "#fff";
-    })*/
-    //Evento para el hover del boton de la informacion 
     botones_divs = $(".botones");
     botones_divs.hover(colorbotones,coloresbotones);
     function colorbotones(){
@@ -118,16 +62,4 @@ window.addEventListener("load",function(){
         var short_this = $(this);
         short_this.css("background","transparent");
     }
-
-    // slider para buscador 
-    
-    var buscador = $(".icono");
-    var busca = $(".buscador");
-
-    busca.hide();
-
-    buscador.click(function(){
-        busca.slideToggle("fast");
-    })
-
 })

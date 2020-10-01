@@ -8,7 +8,7 @@ $resultado=mysqli_query($conexion,$consulta);
 $rows=mysqli_num_rows($resultado);
 
 if ($rows>0){
-    header('location:roles.html');
+    header('location:formulario.html');
 
 }
 else{
