@@ -3,61 +3,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_nosotros.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0ed3d486e.js"></script>
     <script type="text/javascript" src="JS/nosotros.js"></script>
     <script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
     <title>Quienes somos</title>
 </head>
 <body>
-    <header class="contenedor_header">
-        <nav class="nav_principal">
-            <div class="conteiner_logo">
-                <a id="logo" href="new_page.html"><img src="fotos/logo.png" alt="logo"></a>
-            </div>
-            <ul id="contenedor_nav_prin">
-                <li class="contenedor_hipers"><a class="hiper" href="nosotros.html" target="blank">Nosotros</a></li>
-                <li class="contenedor_hipers"><a class="hiper" href="error.html">Clases</a></li>
-                <li class="contenedor_hipers"><a class="hiper" href="error.html">Cotizaciones</a></li>
-                <li class="contenedor_hipers"><a class="hiper" href="Contacto.html">Contacto</a></li>
-                <li id="contenedor_hiper_afiliacion"><a id="hiper_afiliacion" href="error.html">AFÍLIATE YA!</a></li>
-              </ul>
-              <ul id="conteiner_li">
-                <li id="contenedor_search"><i class="icono fas fa-search"></i></li>
-                <li id="contenedor_bars"><i class="icono  fas fa-bars "></i></li>
+    <!--NAV-->
+    <div id="header">
+      <div class="img_header">
+        <header class="contenedor_navs">
+          <nav id="contenedor_sub">
+            <ul id="contenedor_link_sub">
+              <li class="items bt-ingresar"><a href="login.html"><span><i class="fas fa-sign-in-alt sign-in"></i></span>INGRESAR</a></li>
+           </ul>
+          </nav>
+          <nav id="contenedor_principal">
+            <a href="#">
+              <img class="logo" src="fotos/logo.png" alt="Peoplegym">
+            </a>
+            <ul id="contenedor_link_princi">
+              <li class="items"><a href="nosotros.html">NOSOTROS</a></li>
+              <li class="items"><a href="error.html">CLASES</a></li>
+              <li class="items"><a href="Cotizacion.html">COTIZACION</a></li>
+              <li class="items"><a href="Beneficios.html">BENEFICIOS</a></li>
             </ul>
-        </nav>
-    </header>
-    <!--Buscador de la pagina-->
-    <section class="buscador">
-        <input  class="texto" type="text" placeholder="Que deseas buscar?">
-        <button class="boton">Search</button>
-    </section>
-    <!-- Contenido de la pagina-->
-    <section class="contenedor_titulo">
-        <div class="titulo">
-            CUIDAMOS DE TU SALUD 
-        </div>
-        <!--<div class="conteiner_boton">
-            <button id="more_info">Mas sobre nosotros</button>
-        </div>-->
-    </section>
+            <div id="afiliacion">
+              <ul id="contenedor_afiliar">
+                <li class="items"><a href="#">AFILIATE YA!</a></li>
+              </ul>
+            </div>
+            <span class="hamburguesa"><i class="fas fa-bars"></i><span>
+          </nav>
+          <nav id="contenedor_principal_responsive">
+            <ul id="contenedor_link_responsive">
+              <li class="items bt-ingresar"><a href="login.html"><span><i class="fas fa-sign-in-alt sign-in"></i></span>INGRESAR</a></li>
+              <hr>
+              <li class="items"><a href="nosotros.html">NOSOTROS</a></li>
+              <hr>
+              <li class="items"><a href="error.html">CLASES</a></li>
+              <hr>
+              <li class="items"><a href="Cotizacion.html">COTIZACION</a></li>
+              <hr>
+              <li class="items"><a href="Beneficios.html">BENEFICIOS</a></li>
+            </ul>
+            <div id="afiliacion_responsive">
+              <ul id="contenedor_afiliar_responsive">
+                <li class="items"><a href="#">AFILIATE YA!</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <p id="titulo">CUIDAMOS DE TU SALUD</p>
+      </div>
+    </div>  
     <section class="conteiner_info">
-        <div id="vision">
+        <div class="vision cajitas_info">
             <div class="titulos_info">
                 VISION
             </div>
             Ser el gimnasio líder de la ciudad y el país, brindando bienestar a nuestros miembros, generando valor a nuestra empresa, a nuestros colaboradores y a nuestra comunidad
         </div>
-        <div id="mision">
+        <div class="mision cajitas_info">
             <div class="titulos_info">
                 MISION
             </div>
             Brindar a nuestros miembros una salud física y mental, para ayudarles a alcanzar sus objetivos individuales; con nuestra amplia experiencia les proveemos bienestar en base a un esmerado servicio, a un ambiente agradable y con un personal entrenado en los últimos conocimientos disponibles
         </div>
     </section>
+  <!--FOOTER-->
+  <footer>
+    <div class="contenedor_footer">
+      <p class="texto_redes">SIGUENOS</p>
+      <div id="RedeSociales">
+        <ul class="contenedor_links_redes">
+          <li class="items_redes"><a href="#"><span><i class="fab fa-facebook"></i></span>FACEBOOK</a></li>
+          <li class="items_redes"><a href="#"><span><i class="fab fa-instagram"></i></span>INSTAGRAM</a></li>
+          <li class="items_redes"><a href="#"><span><i class="fab fa-youtube"></i></span>YOUTUBE</a></li>
+        </ul>
+      </div>
+      <p class="texto_redes">2020 PeopleGym56 | All Rights Reserved</p>
+    </div>
+  </footer>
+  <!--FOOTER-->
 </body>
 </html>
