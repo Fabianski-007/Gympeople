@@ -5906,7 +5906,7 @@ fieldset[disabled] .form-control {
   color: #bbb; }
 
 .pagination li.active a {
-  background-color: #2196F3; }
+  background-color: #ba00c0; }
 
 .pagination li {
   -webkit-border-radius: 0;
@@ -8130,7 +8130,7 @@ fieldset[disabled] .form-control {
   .dataTables_wrapper .dt-buttons {
     float: left; }
     .dataTables_wrapper .dt-buttons a.dt-button {
-      background-color: #607D8B;
+      background-color: #ba00c0;
       color: #fff;
       padding: 7px 12px;
       margin-right: 5px;
