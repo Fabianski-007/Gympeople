@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     background: url(../../fotos/Cambiarfondo.jpg) no-repeat center center fixed;
+=======
+    background: url(background.jpeg) no-repeat center center fixed;
+>>>>>>> 556bb19b5faa220e5c4ecc19d93a25b3cf2ca016
     background-size: cover;
 }
 .main-section {
