@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <script src="js/tabla.js"></script>
+</head>
+<body>
+    <table id="tblData">
+        <tr>
+            <th>Productos</th>
+            <th>Estado</th>
+            <th>Fecha compra</th>
+            <th>ID factura</th>
+        </tr>
+        <tr>
+            <td>Proteina</td>
+            <td>Comprado</td>
+            <td>Ago 20 2020</td>
+            <td>645654</td>
+    
+        </tr>
+        <tr>
+            <td>Barras Energeticas</td>
+            <td>Cancelado</td>
+            <td>Ene 12 2020</td>
+            <td>2523343</td>
+        </tr>
+        <tr>
+            <td>Mancuerna</td>
+            <td>Encargo</td>
+            <td>Nov 12 2020</td>
+            <td>3543543</td>
+        </tr>
+    </table>
+    <button onclick="exportTableToExcel('tblData')">Exportar Tabla de datos a Excel</button>   
+</body>
+</html>
