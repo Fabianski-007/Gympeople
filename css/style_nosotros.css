@@ -87,44 +87,48 @@ body{
     color: #FF5733;
     font-size: 3.5em;
     position: absolute;
-    top: 50%;
-    left: 28%;
     z-index: 1;
 }
 /*INFORMACION*/
 .conteiner_info{
     display: flex;
-    background: url(../fotos/img5.jpg);
-    background-position: center;
-    background-size: cover;
     height:60vh;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .cajitas_info{
     border-radius: 5px;
-    width: 48%;
-    height: 40%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    height: 50%;
     font-size: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
-.titulos_info{
-    width: 15%;
-    font-size: 1.3em;
+#contenedor_vision{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#contenedor_mision{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 50%;
+    flex-wrap: wrap;
 }
 #titulo{
     position: absolute;
     font-size:3em;
-    top: 75%;
-    left: 33%;
+    top:30%;
+    left: 30%;
 }
 /*INFORMACION*/
 /*FOOTER*/
@@ -160,7 +164,7 @@ body{
     margin: 5px;
 }
 /*FOOTER*/
-@media screen and (max-width: 540px ){
+@media screen and (max-width:1034px){    
 #contenedor_link_princi{
     display: none;
 }
@@ -174,18 +178,13 @@ body{
     display: none;
 }
 .hamburguesa{
-    display: flex;
-    align-self: center;
-    height: 70%;
-}
-.hamburguesa>i{
-    height: 100%;
-    font-size: 1em;
+    display: block;
+    font-size: 1.7em;
+    margin: 15px;
     cursor: pointer;
 }
 #contenedor_principal{
     display: flex;
-    height: 8vh;
     justify-content: space-between;
 }
 #contenedor_principal_responsive{
@@ -212,25 +211,24 @@ hr{
     background:#7216afcc;
     border-radius: 13px;
     width: 100%;
-    height: 15%;
+        height: 15%;
 }
 .bt-ingresar>a{
     color: black;
-}
+}  
 .conteiner_info{
     display: flex;
-    background: url(../fotos/img5.jpg);
-    background-position: center;
-    background-size: cover;
-    flex-direction: column;
-    height:60vh;
+    height:50vh;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
+    margin-top: 10px;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .cajitas_info{
     border-radius: 5px;
     width: 100%;
+    height: 50%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1em;
     display: flex;
@@ -238,49 +236,33 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
-.vision{
-    height: 35%;
+#contenedor_vision{
+    height: 100%;
+    width: 50%;
+    display: flex;
 }
-.titulos_info{
-    width: 15%;
-    font-size: 1.3em;
+#contenedor_mision{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 50%;
 }
 #titulo{
     position: absolute;
-    font-size: 1.6em;
-}
-.contenedor_footer{
-    margin-top:10px ;
-    text-align: center;
-    height: 40vh;
-    background: #000000;
-}
-#RedeSociales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
-}
-.contenedor_links_redes{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 70%;
-    width: 60%;
-    list-style: none;
+    font-size: 2.5em;
+    top: 40%;
+    left: 30%;
 }
 .texto_redes{
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 15px;
     color: #fff;
 }
 .items_redes>a,.items_redes>a>span{
     color: #fff;
-    font-size: 1.2em;
-    text-decoration: none;
+    font-size: 1.3em;
     margin: 5px;
 }
 }
@@ -343,38 +325,39 @@ hr{
 }
 .conteiner_info{
     display: flex;
-    background: url(../fotos/img5.jpg);
-    background-position: center;
-    background-size: cover;
-    flex-direction: column;
     height:60vh;
     width: 100%;
     justify-content: space-around;
     align-content: center;
     margin-top: 10px;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .cajitas_info{
     border-radius: 5px;
     width: 100%;
-    height: 40%;
+    height: 50%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1em;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
-.titulos_info{
-    width: 15%;
-    font-size: 1.3em;
+#contenedor_vision{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+#contenedor_mision{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 50%;
 }
 #titulo{
     position: absolute;
     font-size: 1.6em;
-    top: 75%;
-    left: 30%;
 }
 .texto_redes{
     font-size: .99em;
@@ -387,8 +370,7 @@ hr{
     margin: 5px;
 }
 }
-
-@media screen and (max-width:1034px){    
+@media screen and (max-width: 540px ){
 #contenedor_link_princi{
     display: none;
 }
@@ -402,13 +384,18 @@ hr{
     display: none;
 }
 .hamburguesa{
-    display: block;
-    font-size: 1.7em;
-    margin: 15px;
+    display: flex;
+    align-self: center;
+    height: 70%;
+}
+.hamburguesa>i{
+    height: 100%;
+    font-size: 1em;
     cursor: pointer;
 }
 #contenedor_principal{
     display: flex;
+    height: 8vh;
     justify-content: space-between;
 }
 #contenedor_principal_responsive{
@@ -435,54 +422,71 @@ hr{
     background:#7216afcc;
     border-radius: 13px;
     width: 100%;
-        height: 15%;
+    height: 15%;
 }
 .bt-ingresar>a{
     color: black;
-}  
+}
 .conteiner_info{
     display: flex;
-    background: url(../fotos/img5.jpg);
-    background-position: center;
-    background-size: cover;
-    flex-direction: column;
     height:60vh;
     width: 100%;
-    justify-content: space-around;
-    align-content: center;
-    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .cajitas_info{
     border-radius: 5px;
     width: 100%;
-    height: 40%;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1em;
+    height: 70%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    align-content: space-around;
     text-align: center;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}#contenedor_vision{
+    height: 50%;
+    width: 100%;
+    display: flex;
 }
-.titulos_info{
-    width: 15%;
-    font-size: 1.3em;
+#contenedor_mision{
+    display: flex;
+    height: 50%;
+    width: 100%;
 }
 #titulo{
     position: absolute;
     font-size: 1.6em;
-    top: 75%;
-    left: 30%;
+}
+.contenedor_footer{
+    margin-top:10px ;
+    text-align: center;
+    height: 40vh;
+    background: #000000;
+}
+#RedeSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+.contenedor_links_redes{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 60%;
+    list-style: none;
 }
 .texto_redes{
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 15px;
     color: #fff;
 }
 .items_redes>a,.items_redes>a>span{
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    text-decoration: none;
     margin: 5px;
 }
 }
